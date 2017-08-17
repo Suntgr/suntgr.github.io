@@ -82,7 +82,7 @@
 		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/suntgr/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -123,7 +123,7 @@
 			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/suntgr/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
@@ -198,6 +198,133 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/08/17/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-just-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/23/just-test/">hexo主题Yilia在移动端适配的一些事</a>
+    </h1>
+  
+
+        
+        <a href="/2015/02/23/just-test/" class="archive-article-date">
+  	<time datetime="2015-02-23T04:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-02-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Yilia是我去年9月开发的主题，本来只是想给自己玩，因而开始有许多“任性”的设计。诸如“我本可以兼容ie，但我就不”这种… 结果star数越来越多，半年里，居然成为了搜索“hexo-theme”最多star数的主题。 感慨大家跟我一样任性的同时，也是受宠若惊，万分感谢！</p>
+<p>而年前的主要矛盾，是日益增多的star和fork数，与功能还未完善之间的矛盾；以及越来越多的bug被大家发现，与我忙得飞起只好假装没发现这些bug的矛盾…</p>
+<p>默默放下抢红包的手机，还是决定先把关于hexo最想解决的三件事之一：移动端适配给做了。</p>
+<p>##三件事</p>
+<blockquote>
+<p>话说这三件事一直有放在心上，是使用hexo时还不够满意的地方。 </p>
+</blockquote>
+<p><strong>移动端适配。</strong>就很多主题来看，响应式布局就等同于移动端适配，这是远远不足够的。布局影响的仅仅是视觉，还必须有特有的交互逻辑，以适应大家的操作习惯。<br><strong>seo。</strong>hexo的seo还比较弱，description需要支持文章自定义比较稳妥，而把标签云塞到keyword里面去是个好想法。<br><strong>模块化加载。</strong>把fancybox，jiathis，duoshuo这些给延迟加载，移动端和pc端js分离。就瀑布图来看，是有信心提速20%-30%的。</p>
+<h2 id="移动端适配"><a href="#移动端适配" class="headerlink" title="移动端适配"></a>移动端适配</h2><font color="red">内容</font>
+
+<p>关于适配着重在这些方面：</p>
+<ul>
+<li><p>滚动时视觉感官上的<em>流畅性</em></p>
+</li>
+<li><p>便于单手操作</p>
+</li>
+<li><p>次要信息在左侧边栏的收纳管理</p>
+</li>
+</ul>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<ul>
+<li><p>This is a list item with two paragraphs.</p>
+<p>This is the second paragraph in the list item. You’re<br>only required to indent the first line. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit.</p>
+</li>
+<li><p>Another item in the same list.</p>
+</li>
+</ul>
+<p>1986. What a great season.</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p><strong>single asterisks</strong></p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+<p>Please don’t use any <code>&lt;blink&gt;</code> tags.</p>
+<p>A backtick-delimited string in a code span: <code>`foo` </code></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">  McHale hexo</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">主题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/02/23/just-test/">展开全文 >></a>
         </p>
       
 
@@ -318,6 +445,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">主题</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

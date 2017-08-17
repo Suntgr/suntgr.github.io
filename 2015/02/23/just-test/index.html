@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/suntgr">
-  <title>Archives: 2017 | suntgr的博客</title>
+  <title>hexo主题Yilia在移动端适配的一些事 | suntgr的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="suntgr的博客">
-<meta property="og:url" content="https://github.com/suntgr/archives/2017/index.html">
+  <meta name="description" content="Yilia是我去年9月开发的主题，本来只是想给自己玩，因而开始有许多“任性”的设计。诸如“我本可以兼容ie，但我就不”这种… 结果star数越来越多，半年里，居然成为了搜索“hexo-theme”最多star数的主题。 感慨大家跟我一样任性的同时，也是受宠若惊，万分感谢！ 而年前的主要矛盾，是日益增多的star和fork数，与功能还未完善之间的矛盾；以及越来越多的bug被大家发现，与我忙得飞起只好">
+<meta name="keywords" content="hexo,主题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo主题Yilia在移动端适配的一些事">
+<meta property="og:url" content="https://github.com/suntgr/2015/02/23/just-test/index.html">
 <meta property="og:site_name" content="suntgr的博客">
+<meta property="og:description" content="Yilia是我去年9月开发的主题，本来只是想给自己玩，因而开始有许多“任性”的设计。诸如“我本可以兼容ie，但我就不”这种… 结果star数越来越多，半年里，居然成为了搜索“hexo-theme”最多star数的主题。 感慨大家跟我一样任性的同时，也是受宠若惊，万分感谢！ 而年前的主要矛盾，是日益增多的star和fork数，与功能还未完善之间的矛盾；以及越来越多的bug被大家发现，与我忙得飞起只好">
+<meta property="og:updated_time" content="2017-08-17T10:49:38.615Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="suntgr的博客">
+<meta name="twitter:title" content="hexo主题Yilia在移动端适配的一些事">
+<meta name="twitter:description" content="Yilia是我去年9月开发的主题，本来只是想给自己玩，因而开始有许多“任性”的设计。诸如“我本可以兼容ie，但我就不”这种… 结果star数越来越多，半年里，居然成为了搜索“hexo-theme”最多star数的主题。 感慨大家跟我一样任性的同时，也是受宠若惊，万分感谢！ 而年前的主要矛盾，是日益增多的star和fork数，与功能还未完善之间的矛盾；以及越来越多的bug被大家发现，与我忙得飞起只好">
   
     <link rel="alternative" href="/atom.xml" title="suntgr的博客" type="application/atom+xml">
   
@@ -149,49 +154,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-just-test" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-08-17T07:45:59.768Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/17/hello-world/">Hello Tiger</a>
+    <h1 class="article-title" itemprop="name">
+      hexo主题Yilia在移动端适配的一些事
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2015/02/23/just-test/" class="archive-article-date">
+  	<time datetime="2015-02-23T04:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-02-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Yilia是我去年9月开发的主题，本来只是想给自己玩，因而开始有许多“任性”的设计。诸如“我本可以兼容ie，但我就不”这种… 结果star数越来越多，半年里，居然成为了搜索“hexo-theme”最多star数的主题。 感慨大家跟我一样任性的同时，也是受宠若惊，万分感谢！</p>
+<p>而年前的主要矛盾，是日益增多的star和fork数，与功能还未完善之间的矛盾；以及越来越多的bug被大家发现，与我忙得飞起只好假装没发现这些bug的矛盾…</p>
+<p>默默放下抢红包的手机，还是决定先把关于hexo最想解决的三件事之一：移动端适配给做了。</p>
+<p>##三件事</p>
+<blockquote>
+<p>话说这三件事一直有放在心上，是使用hexo时还不够满意的地方。 </p>
+</blockquote>
+<p><strong>移动端适配。</strong>就很多主题来看，响应式布局就等同于移动端适配，这是远远不足够的。布局影响的仅仅是视觉，还必须有特有的交互逻辑，以适应大家的操作习惯。<br><strong>seo。</strong>hexo的seo还比较弱，description需要支持文章自定义比较稳妥，而把标签云塞到keyword里面去是个好想法。<br><strong>模块化加载。</strong>把fancybox，jiathis，duoshuo这些给延迟加载，移动端和pc端js分离。就瀑布图来看，是有信心提速20%-30%的。</p>
+<h2 id="移动端适配"><a href="#移动端适配" class="headerlink" title="移动端适配"></a>移动端适配</h2><font color="red">内容</font>
 
+<p>关于适配着重在这些方面：</p>
+<ul>
+<li><p>滚动时视觉感官上的<em>流畅性</em></p>
+</li>
+<li><p>便于单手操作</p>
+</li>
+<li><p>次要信息在左侧边栏的收纳管理</p>
+</li>
+</ul>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<ul>
+<li><p>This is a list item with two paragraphs.</p>
+<p>This is the second paragraph in the list item. You’re<br>only required to indent the first line. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit.</p>
+</li>
+<li><p>Another item in the same list.</p>
+</li>
+</ul>
+<p>1986. What a great season.</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p><strong>single asterisks</strong></p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+<p>Please don’t use any <code>&lt;blink&gt;</code> tags.</p>
+<p>A backtick-delimited string in a code span: <code>`foo` </code></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">  McHale hexo</div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">主题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://github.com/suntgr/2015/02/23/just-test/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/08/17/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello Tiger
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -214,8 +392,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
